@@ -4,6 +4,16 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
+  datasource:
+    url: jdbc:postgresql://localhost:5432/studentDB
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
   security:
     user:
       name: faisal
