@@ -1,4 +1,5 @@
 FROM openjdk:17-jdk-alpine
 ARG JAR_FILE=target/*.jar
-COPY ./target/web_app_0.0.2.jar app.jar
+COPY ./target/web_app_0.0.3.jar app.jar
+EXPOSE 8081
 ENTRYPOINT ["java","-jar","/app.jar"]
